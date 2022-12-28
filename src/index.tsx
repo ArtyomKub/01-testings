@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from "./App";
-import {splitIntoWords} from "./01";
+import {splitIntoWords} from "./01-hello-tests/01";
 
 
 const root = ReactDOM.createRoot(
@@ -12,7 +12,10 @@ const root = ReactDOM.createRoot(
 
 const sentense = 'Hello my friends!';
 const result = splitIntoWords('')
-console.log(result)
+
+console.log(result[0] === 'hello');
+console.log(result[1] === 'my');
+console.log(result[2] === 'friends');
 
 root.render(
   <React.StrictMode>
