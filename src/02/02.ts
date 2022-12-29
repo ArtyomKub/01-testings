@@ -2,24 +2,21 @@ type CityType = {
     title: string
     countryTitle: string
 }
-
 type AddressType = {
     streetTitle: string
     city: CityType
 }
-
-type TechnologiesType = {
+type TechType = {
     id: number
     title: string
 }
-
 type StudentType = {
     id: number
     name: string
     age: number
     isActive: boolean
     address: AddressType
-    technologies: Array<TechnologiesType>
+    technologies: Array<TechType>
 }
 
 const student: StudentType = {
